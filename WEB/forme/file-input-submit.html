@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="handle-upload.html" method="GET">
+        <h1>Then VS Now</h1>
+        <label for="before">Upload your before picture: <br>
+            <input type="file" name="before-picture" id="">
+        </label>
+        <br>
+        <br>
+        <label for="description-before">Describe your condition in before photo: <br>  <!-- da li treba ovde label-->
+            <textarea name="description-before" id="" cols="30" rows="10" placeholder="Enter here"></textarea>
+        </label>
+
+        <br>
+        <br>
+
+        <label for="">Upload your after picture: <br>
+            <input type="file" name="after-picture">
+        </label>
+        <br>
+        <br>
+        <label for="description-after">Describe you condition in after photo: <br>
+            <textarea name="description-after" id="" cols="30" rows="10" placeholder="Enter here"></textarea>
+        </label>
+        <br>
+        <input type="submit" name="send" value="Send">
+
+    </form>
+</body>
+</html>
