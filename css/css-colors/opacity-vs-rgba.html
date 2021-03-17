@@ -1,0 +1,65 @@
+<!-- Opacity VS RGBA
+● Use the previously created HTML structure
+● Apply 50% opacity to the first element
+● Set bg-color with 50% transparency (rgba) on the second element
+● Add picture to the div element that has opacity defined
+● Add picture to the div element that has rgba defined-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opaciy Vs RGBA</title>
+    <style type="text/css">
+         body {
+            background-color: #fa8072;
+            margin: 10px;
+        }
+        #first-ph {
+            background-color: #7a6579;
+            color: #135f3c;
+            opacity: 0.5;
+        }
+        #second-ph {
+            background-color: rgba(122, 69, 93, 0.5);
+            color:rgb(91, 154, 160);
+        }
+
+        #third-ph {
+            background-color: #674d3c;
+            color: rgb(163, 197, 13);
+        }
+        
+        .container-1 {
+            opacity: 0.6;
+        }
+
+        .container-2 {
+            background-color: rgba(55, 94, 139, 0.9);
+        }   
+
+        div>img {
+            display: block;
+            margin-right: auto;
+            margin-left:auto;
+        }
+    </style>
+</head>
+<body>
+    <p id="first-ph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores libero quas molestiae provident rerum excepturi. In provident qui autem vel doloribus ut quos aut culpa impedit laboriosam maxime quaerat nisi quidem voluptates consequuntur suscipit delectus beatae totam ad soluta ipsa, dolore exercitationem id! Perferendis placeat ex delectus sequi modi.</p> <!-- da li moze ID da bude broj prvi u nazivu-->
+
+    <div class="container-1">
+        <img src="https://static.wikia.nocookie.net/life-is-strange/images/0/0b/Puerto_Lobos_postcard.png/revision/latest?cb=20181011010207" alt="Puerto Lobos">
+    </div>
+
+    <p id="second-ph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores libero quas molestiae provident rerum excepturi. In provident qui autem vel doloribus ut quos aut culpa impedit laboriosam maxime quaerat nisi quidem voluptates consequuntur suscipit delectus beatae totam ad soluta ipsa, dolore exercitationem id! Perferendis placeat ex delectus sequi modi.</p>
+
+    <div class="container-2">
+        <img src="https://static.wikia.nocookie.net/life-is-strange/images/0/0b/Puerto_Lobos_postcard.png/revision/latest?cb=20181011010207" alt="Puerto Lobos">
+    </div>
+
+    <p id="third-ph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores libero quas molestiae provident rerum excepturi. In provident qui autem vel doloribus ut quos aut culpa impedit laboriosam maxime quaerat nisi quidem voluptates consequuntur suscipit delectus beatae totam ad soluta ipsa, dolore exercitationem id! Perferendis placeat ex delectus sequi modi.</p>
+</body>
+</html>
