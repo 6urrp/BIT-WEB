@@ -1,0 +1,46 @@
+@font-face { 
+    font-family: 'Syne Mono', monospace;
+    src: url(SyneMono-Regular.ttf);
+}
+
+* {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.first-ph {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.second-ph {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.third-ph {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first-ph > q {
+    font-family: fantasy;
+}
+
+.second-ph > q {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.third-ph > q {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.third-ph > span {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.first-ph {
+    font-family: 'Syne Mono', monospace;
+}
+
+h1 {
+    font-family: 'Cormorant Unicase', serif; ;
+}
