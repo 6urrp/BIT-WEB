@@ -1,0 +1,105 @@
+/********************** GLOBAL STYLES **********************/
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(216,216,216);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/********************** LAYOUT **********************/
+
+.nav-bar {
+    width: 95%;
+    margin: 0 auto;
+    background-color:rgb(255,181,4);
+}
+
+.nav-bar ul li {
+    position: relative;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+
+}
+
+
+/********************** SPECIFIC STYLES **********************/
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.drop-down {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+}
+
+ul.drop-down li  {
+    position: relative;
+    display: block;
+    padding: 20px;
+    margin: 0;
+    width: 300px;
+    text-align: left;
+    background-color: #FFFFFF;
+    visibility: hidden;
+}
+
+
+li.active {
+    background-color: rgb(228, 228, 228);
+}
+
+.active-home {
+    background-color: rgb(216,216,216);
+}
+
+
+
+/********************** HELPER CLASSES **********************/
+
+.nav-bar li:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.nav-bar ul li:hover ul li {
+    visibility: visible;
+}
+
+ul.drop-down li:nth-child(odd) {
+    background-color: white;
+}
+
+ul.drop-down li:nth-child(even) {
+    background-color: rgb(216,216,216);
+}
+
+ul.drop-down li:hover {
+    background-color: grey;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear:both;
+}

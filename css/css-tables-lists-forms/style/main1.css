@@ -1,0 +1,24 @@
+.firstunordered {
+    list-style-type: circle;
+}
+.secondunordered {
+    list-style-type: square;
+}
+.firstordered {
+    list-style-type: upper-alpha;
+}
+.secondordered {
+    list-style-type: lower-roman;
+}
+
+
+.imagelist {
+    width: 200px;
+    list-style-image: url(/css/css-tables-lists-forms/img/riba.JPG);
+}
+
+.imagelist2 {
+    width: 200px;
+    list-style-image: url(/css/css-tables-lists-forms/img/list.JPG);
+    list-style-position: inside;
+}

@@ -1,0 +1,77 @@
+.first {
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;   
+}
+
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: deepskyblue;
+}
+
+.third {
+    width: 200px;
+    height: 200px;
+    background-color: mediumspringgreen;
+}
+
+
+.first2 {
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;  
+    z-index: 1; 
+}
+
+.second2 {
+    width: 200px;
+    height: 200px;
+    background-color: deepskyblue;
+    position: relative;
+    left: 100px;
+    bottom:100px;
+    z-index: 3;
+}
+
+.third2 {
+    width: 200px;
+    height: 200px;
+    background-color: mediumspringgreen;
+    position: relative;
+    left:200px;
+    bottom:200px;
+    z-index: 2;
+}
+
+.first3 {
+    width: 200px;
+    height: 200px;
+    background-color: darksalmon;   
+    position: absolute;
+    right: 0px;
+    z-index: 3;
+}
+
+.sec3 {
+    width: 200px;
+    height: 200px;
+    background-color: deepskyblue;
+    position:absolute;
+    right: 100px;
+    bottom: -575px;
+    z-index: 2;
+
+}
+
+
+
+.third3 {
+    width: 200px;
+    height: 200px;
+    background-color: mediumspringgreen;
+    position: absolute;
+    right: 200px;
+    bottom: -675px;
+    z-index: 1;
+}

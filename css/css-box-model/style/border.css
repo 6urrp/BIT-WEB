@@ -1,0 +1,60 @@
+
+
+
+p {
+    background-color: yellow;
+    margin-right: 20px;
+    padding: 0;
+    
+}
+
+.first, .third {
+    border: 5px dashed red;
+    padding: 50px;
+}
+
+.second {
+    border: 5px solid green;
+    padding-top: 50px;
+}
+
+.first {
+    width: 300px;
+    margin:50px;
+    display: inline-block;
+}
+
+.second {
+    width: 400px;
+    margin: 0 auto;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.third {
+    width: 200px;
+    margin-left: 100px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+p {
+    
+    margin-right: 20px;
+    padding: 0;
+}
+
+h1 {
+    width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: burlywood;
+    color:indianred;
+    font-family: 'Train One', cursive;
+    box-shadow: 3px 8px 6px blue;
+    border-radius: 30%;
+    text-align: center;
+
+}
