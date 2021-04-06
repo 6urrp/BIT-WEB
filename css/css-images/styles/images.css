@@ -1,0 +1,40 @@
+
+
+
+img {
+    margin-bottom: 10px;
+    
+}
+
+.first-pict {
+    display: block;
+    height: 200px;
+    float: right;
+}
+
+.first-pict:hover {
+    cursor: grabbing;
+    border: 5px solid #555;
+}
+
+.second-pict {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.second-pict:hover {
+    border: 5px dotted red;
+}
+
+.third-pict {
+    display: block;
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

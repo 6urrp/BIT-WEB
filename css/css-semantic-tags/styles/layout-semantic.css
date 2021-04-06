@@ -11,25 +11,27 @@ body {
     font-weight: 500;
 }
 
-.nav-container {
-    width: 960px;
-    background-color:rgb(200,53,47);
-}
 .main-container {
     width: 960px;
     margin: 0 auto;
 }
 
+
+.nav-container {
+    width: 960px;
+    background-color:rgb(200,53,47);
+}
+
 .nav-container ul {
     float: right;
-    list-style: none;
-    color: white;
 }
-li {
+
+ul li {
     display: inline-block;
     padding: 11px;
     margin-right: 12px;
-
+    list-style: none;
+    color: white;
 }
 
 .main-img-container img {
@@ -38,20 +40,22 @@ li {
     margin-bottom: 3px;
 }
 
+.side-bar-container {
+    background-color: rgb(255,190,0);
+    max-width: 300px;
+    float: right;
+    padding: 20px 10px;
+}
+
 .side-bar-container p {
     border-bottom: thin solid rgba(80, 80, 80, 0.596);
-    padding:10px;
-    
+    padding: 10px;
 }
 
 .floating-container {
     display: inline-block;
     max-width: 300px;
     margin: 7px;
-}
-
-.floating-container p {
-    margin-top: 7px;
 }
 
 .floating-container div {
@@ -64,6 +68,10 @@ li {
     color: white;
     font-size: 20px;
     margin-bottom: 5px;
+}
+
+.floating-container p {
+    margin-top: 7px;
 }
 
 .red-box {
@@ -82,24 +90,21 @@ li {
     background-color: rgb(39,174,97);
 }
 
-.side-bar-container {
-    background-color: rgb(255,190,0);
-    max-width: 300px;
-    float: right;
-    padding: 20px 10px;
+.floating-container p {
+    margin-top: 7px;
 }
 
 footer {
     width: 100%;
     background-color: rgb(45,62,80);
-    color: white; 
+    color: white;
 }
 
 .footer-container {
     width: 960px;
     margin: 0 auto;
     padding: 30px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .clearfix:before,
@@ -110,10 +115,3 @@ footer {
 .clearfix:after {
     clear: both;
 }
-
-
-
-
-
-
-
