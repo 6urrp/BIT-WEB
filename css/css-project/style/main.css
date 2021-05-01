@@ -89,14 +89,14 @@ Header and Nav Section
     background-color: rgb(127,194,247);
     list-style: none;
     text-transform: uppercase;
-    
+    font-family: "Roboto-bold";
 }
 .main-list li a {
     text-decoration: none; 
     color: white;  
 }
 .main-list li {
-    padding: 7px;
+    padding: 7px; 
 }
 .main-list li:hover a {
     color:rgb(127,194,247);
@@ -390,10 +390,6 @@ footer {
     height: 20px;
     width: 20px;
     border: 2px solid black;
-    left:0;
-    right: 0;
-    top:0;
-    bottom:0;
     margin:auto;
     transform: rotate(45deg);
 }
