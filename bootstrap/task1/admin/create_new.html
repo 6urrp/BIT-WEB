@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-dist/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <a href="../index.html">Back To Home Page</a>
+    <form action="../posters/bart.html" method="GET">
+        <fieldset>
+            <legend>Top Headline</legend>
+            <label for="headline">Headline text:
+                <input type="text" name="headline-text" size="15" maxlength="30">
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Images</legend>
+                <label for="img1">Image 1:</label>
+                <input type="file" name="img1" id="img1"> 
+                <br>
+                <label for="img2">Image 2:</label>
+                <input type="file" name="img2" id="img2">
+                <br>
+                <label for="img3">Image 3:</label>
+                <input type="file" name="img3" id="img3">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Reward</legend>
+            <label for="reward-money">Reward money:</label>
+            <input type="number" name="reward" id="reward-money">
+        </fieldset>
+
+        <fieldset>
+            <legend>Reward:</legend>
+            <label for="aliases">Aliases: <br>
+                <input type="text" name="aliases"> 
+                <br>
+                <br>
+            </label>
+            <label for="date-birth">Birth: <br>
+                <input type="text" name="birth">
+                <br>
+                <br>
+            </label>
+            <label for="hair">Hair: <br>
+                <input type="text" name="hair-color">
+                <br>
+                <br>
+            </label>
+            <label for="eyes">Eyes: <br>
+                <input type="text" name="eyes-color">
+                <br>
+                <br>
+            </label>
+            <label for="height">Height: <br>
+                <input type="text" name="height"> <!-- ovde ide type text zbog mernih jedinica koje se pisu takodje-->
+                <br>
+                <br>
+            </label>
+            <label for="weight">Weight: <br>
+                <input type="text" name="weight"> <!-- ovde ide type text zbog mernih jedinica koje se pisu takodje-->
+                <br>
+                <br>
+            </label>
+            <label for="gender">Sex: <br>
+                <input type="text" name="gender"> 
+                <br>
+                <br>
+            </label>
+            <label for="ID">ID Number <br>
+                <input type="number" name="id-number"> 
+                <br>
+                <br>
+            </label>
+            <label for="occupation">Occupation: <br>
+                <input type="text" name="occupation"> 
+                <br>
+                <br>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Remarks</legend>
+            <textarea name="remarks" placeholder="Remarks text" cols="260" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Caution:</legend>
+            <textarea name="caution" placeholder="Caution text" cols="260" rows="10"></textarea>
+        </fieldset>
+        <br><br>
+
+        <button type="reset">
+            <img src="https://e7.pngegg.com/pngimages/869/765/png-clipart-reset-button-computer-icons-restart-miscellaneous-blue.png" alt="reset-button" width="15" height="15" /> Reset
+         </button>
+         <button type="submit">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-and-shapes-3/177800/142-512.png" alt="submit-button" width="15" height="15" /> Create poster
+         </button>
+
+    </form>
+
+    <script src="../bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
