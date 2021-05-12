@@ -2,3 +2,8 @@
     background-color: thistle;
     border: 2px dotted green;
 }
+
+
+.paddingbt {
+    padding: 0 8px 100px;
+}
