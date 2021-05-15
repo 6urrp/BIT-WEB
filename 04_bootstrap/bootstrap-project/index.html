@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Bootstrap and Sass</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--HEADER START-->
+        <header class="mb-5">
+            <!-- NAV START-->
+            <!--
+            <nav class="navbar navbar-expand-xl navbar-light bg-light mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="#">BIT STUDENT</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        -->
+
+        <nav class="navbar navbar-expand-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+            <!-- NAV END-->
+
+            <div class="container text-center">
+                <img src="./img/profile.png" alt="Profile photo">
+                <h1 class="text-uppercase">Bootstrap and Sass</h1>
+                <div>za zvezdicu</div>
+                <p class="pre-">Web Developer-Graphic Artist-User Expirience
+                    Designer
+                </p>
+            </div>
+        </header>
+        <!-- HEADER END-->
+
+        <!--MAIN START-->
+        <main>
+
+            <!--PORTFOLIO SECTION START-->
+            <div class="container mb-5">
+                <h2 class="text-uppercase text-center">Portfolio</h2>
+                <div>za zvezdicu</div>
+                <section class="row gy-3">
+                    <img src="./img/portfolio/cabin.png" alt="" class="img-fluid col-md-6 col-xl-4">
+                    <img src="./img/portfolio/cake.png" alt="" class="img-fluid col-md-6 col-xl-4">
+                    <img src="./img/portfolio/circus.png" alt="" class="img-fluid col-md-6 col-xl-4">
+                    <img src="./img/portfolio/game.png" alt="" class="img-fluid col col-md-6 col-xl-4">
+                    <img src="./img/portfolio/safe.png" alt="" class="img-fluid col-md-6 col-xl-4">
+                    <img src="./img/portfolio/submarine.png" alt="" class="img-fluid col-md-6 col-xl-4">
+                </section>
+            </div>
+            <!--PORTFOLIO SECTION END-->
+
+            <!--ABOUT SECTION START-->
+            <div class="container d-flex flex-column mb-5">
+                <h2 class="text-uppercase text-center">About</h2>
+                <div>za zvezdicu</div>
+                <div class="row-xl d-xl-flex justify-content-xl-center">
+                    <p class="col-xl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem vero quis quas accusamus dolore magnam provident, doloremque sint fugiat fugit asperiores quia dolores eos recusandae! Similique, eveniet dolore. Perferendis dolor modi ullam, velit officiis facere dolorem odio beatae ducimus eos ipsum ratione similique fugiat voluptate maiores sint suscipit perspiciatis. Consequuntur.</p>
+                    <p class="col-xl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eveniet suscipit amet numquam dicta, libero maxime veritatis distinctio magnam neque at aliquam dolor tempora error porro, soluta eligendi rerum vero labore. Esse quidem vitae ad dicta minima cum. Dolor provident accusamus quos omnis necessitatibus perferendis exercitationem voluptatum molestias ex repudiandae!</p>
+                </div>
+                <button type="submit" class="btn btn-outline-success align-self-center">Find Out More</button>
+
+            </div>
+            <!--ABOUT SECTION END-->
+
+            <!--CONTACT SECTION START-->
+            <div class="container mb-5">
+                <h2 class="text-uppercase text-center">Contact me</h2>
+                <div>za zvezdicu</div>
+                <form action="post">
+                    <div class="row-xl">
+                        <div class="form-group mb-3 col-xl-6 offset-xl-3">
+                            <label for="username">Name</label>
+                            <input type="text" id="username" class="form-control">
+                        </div>
+                        <div class="form-group mb-3 col-xl-6 offset-xl-3">
+                            <label for="usermail">Email Address</label>
+                            <input type="email" id="usermail" class="form-control">
+                        </div>
+                        <div class="form-group mb-3 col-xl-6 offset-xl-3">
+                            <label for="usernumber">Phone Number</label>
+                            <input type="number" id="usernumber" class="form-control">
+                        </div>
+
+                        <div class="form-group mb-3 col-xl-6 offset-xl-3">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea name="" id="exampleFormControlTextarea1" rows="7" class="form-control"></textarea>
+                        </div>
+
+                            <button type="submit" class="btn btn-success offset-xl-3">Send</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <!--CONTACT SECTION END-->
+        </main>
+        <!--MAIN END-->
+
+        <!--FOOTER START-->
+        <footer>
+            <div class="container">
+                <div class="row text-center gy-5">
+                    <div class="col-md-4">
+                        <h3 class="text-uppercase">Location</h3>
+                        <p>Centar za obrazovanje</p>
+                        <p class="text-uppercase">Bit technology</p>
+                        <p>Nemanjina 4/I, Beograd</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="text-uppercase">Around the web</h3>  
+                        <!-- deo za font awesome--> 
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="text-uppercase">More details</h3>
+                        <p>We believe that the future of Serbia firmly depends on our ability to scale the number of individuals involved in the IT sector. That is why we founded BIT.</p>
+                    </div>
+                    
+                    <div class="col-md-4 offset-md-4">
+                        <p>Copyright  Bit Student 2017</p>
+                        <small>Bit thanks to Start Bootstrap!</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER END-->
+
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
