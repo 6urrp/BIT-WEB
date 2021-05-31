@@ -113,7 +113,7 @@ function twiceBack () {
 //////////WINDOW METHODS///////
 
 function greetingMsg () {
-    alert("DJES BA");
+    alert("Hello there!");
 }
 greetingMsg();
 
