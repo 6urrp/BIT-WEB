@@ -1,9 +1,16 @@
-function alert () {
-    var alertText = document.querySelector("ul:nth-child(2)").innerHTML;
+function alertMe () {
+    var alertText = document.querySelector("li:nth-child(2)").innerHTML;
     alert(alertText);
+    
 }
 
-//alert();
+alertMe();
 
-var alertText = document.querySelector("ul:nth-child(1)").innerHTML;
-console.log(alertText);
+function replaceText (text) {
+    var newText = document.querySelector("ul").lastElementChild.textContent;
+    newText = text;
+    console.log(newText);
+}
+
+replaceText("Prolazim kroz igru ko da nasao sam cit kod");
+
