@@ -1,5 +1,6 @@
 function alertMe () {
-    var alertText = document.querySelector("li:nth-child(2)").innerHTML;
+    var alertText = document.querySelector("li:nth-child(2)").textContent;
+    console.log(alertText)
     alert(alertText);
     
 }
@@ -7,9 +8,8 @@ function alertMe () {
 alertMe();
 
 function replaceText (text) {
-    var newText = document.querySelector("ul").lastElementChild.textContent;
-    newText = text;
-    console.log(newText);
+    var newText = document.querySelector("ul").lastElementChild;
+    newText.textContent = text;
 }
 
 replaceText("Prolazim kroz igru ko da nasao sam cit kod");
