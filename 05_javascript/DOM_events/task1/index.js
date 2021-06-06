@@ -12,9 +12,18 @@ function changeColor() {
 */
 
 var intervalId;
-function changeColor() {
-    var bodyNode = document.querySelector("body");
+var bodyNode = document.querySelector("body");
+
+var changeColor = function () { 
     intervalId = setInterval(function(){
         bodyNode.classList.toggle("bg-color");  
     }, 500);
 };
+
+var change = changeColor;
+
+var turnOffColor = function () {
+    clearInterval(intervalId);
+    bodyNode.classList.remove("bg-color");
+
+}

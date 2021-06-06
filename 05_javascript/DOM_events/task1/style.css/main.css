@@ -1,4 +1,11 @@
+.container {
+    width: 100%;
+    
+}
+
 .red-button {
+    margin:20px auto;
+    display: block;
     background-color: rgb(224, 71, 71);
     padding: 12px 20px;
     border-radius: 10px;
@@ -9,6 +16,8 @@
 }
 
 .yellow-button {
+    display: block;
+    margin:0 auto;
     background-color: rgb(233, 201, 20);
     padding: 12px 20px;
     border-radius: 10px;
@@ -19,5 +28,5 @@
 }
 
 .bg-color {
-    background-color: blue;
+    background-color: rgb(72, 72, 236);
 }
