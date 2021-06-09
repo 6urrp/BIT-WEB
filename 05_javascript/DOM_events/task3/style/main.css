@@ -1,0 +1,22 @@
+.container {
+    background-image: url(../img/field.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
