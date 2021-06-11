@@ -35,7 +35,42 @@ var groundStop = function (e) {
         bodyContainer.addEventListener("keydown", groundMoving);
 }
 
+var moveLeft = function (e) {
+        if (e.keyCode === 37) {
+                mario.setAttribute("src", "./img/mario-running-left.gif");
+        }  
+        bodyContainer.removeEventListener("keydown", moveLeft);
+}
+
+var stopMovingLeft = function (e) {
+        if (e.keyCode === 37) {
+                mario.setAttribute("src", "./img/mario-left.png");
+        }
+        bodyContainer.addEventListener("keydown", moveLeft);
+}
+
+var groundMovingLeft = function (e) {
+        if (e.keyCode === 37) {
+                intervalId = setInterval(function() {
+                        xPosition += 1;
+                        container.style.backgroundPosition = xPosition + 'px bottom';  
+                },1);
+                bodyContainer.removeEventListener("keydown", groundMovingLeft);
+        }
+}
+
+var groundStopLeft = function (e) {
+        if (e.keyCode === 37) {
+                clearInterval(intervalId);
+        }
+        bodyContainer.addEventListener("keydown", groundMovingLeft);
+}
+
 bodyContainer.addEventListener("keydown", moveRight);
+bodyContainer.addEventListener("keydown", moveLeft);
 bodyContainer.addEventListener("keydown", groundMoving);
+bodyContainer.addEventListener("keydown", groundMovingLeft);
 bodyContainer.addEventListener("keyup", stopMoving);
+bodyContainer.addEventListener("keyup", stopMovingLeft);
 bodyContainer.addEventListener("keyup", groundStop);
+bodyContainer.addEventListener("keyup", groundStopLeft);
