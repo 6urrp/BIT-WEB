@@ -3,6 +3,7 @@
     background-image: url(../img/bg.jpg);
     background-size: contain;
     background-repeat: repeat-x;
+    background-position: 0 bottom;
     height: 100vh;
 }
 
