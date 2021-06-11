@@ -66,6 +66,18 @@ var groundStopLeft = function (e) {
         bodyContainer.addEventListener("keydown", groundMovingLeft);
 }
 
+var jumping = function (e) {
+        if (e.keyCode === 32) {
+                mario.style.bottom = "30%";
+        }    
+}
+
+var ground = function (e) {
+        if (e.keyCode === 32) {
+                mario.style.bottom = "18%";
+        } 
+}
+
 bodyContainer.addEventListener("keydown", moveRight);
 bodyContainer.addEventListener("keydown", moveLeft);
 bodyContainer.addEventListener("keydown", groundMoving);
@@ -74,3 +86,7 @@ bodyContainer.addEventListener("keyup", stopMoving);
 bodyContainer.addEventListener("keyup", stopMovingLeft);
 bodyContainer.addEventListener("keyup", groundStop);
 bodyContainer.addEventListener("keyup", groundStopLeft);
+
+bodyContainer.addEventListener("keypress", jumping);
+
+bodyContainer.addEventListener("keyup", ground);
