@@ -4,9 +4,10 @@ var width = 300;
 var flag = false;
 
 var add = function (e) {
-    console.log(e.target)
     if (e.target.offsetWidth >= width) {
         e.target.style.border = "1px solid red";
+    } else {
+        console.log(e.target);
     }
 }
 
@@ -19,15 +20,15 @@ function removeBorder (img) {
             if (img.target.offsetWidth >= width) {
                 img.target.removeEventListener("click", add);
                 img.target.style.border = "none";
+                console.log(img.target);
                 flag = false;
-                console.log(img.target)
             }
         } else {
             if (img.target.offsetWidth >= width) {
                 img.target.addEventListener("click", add);
                 img.target.style.border = "1px solid red";
+                console.log(img.target);
                 flag = true;
-                console.log(img.target)
             }
         }
 }
