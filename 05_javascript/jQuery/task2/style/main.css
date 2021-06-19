@@ -1,0 +1,15 @@
+li {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(145, 197, 148);
+    border: 1px inset black;
+}
+
+.upper {
+    text-transform: uppercase;
+}
