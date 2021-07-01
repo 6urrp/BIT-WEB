@@ -24,17 +24,19 @@ new ip address written in input field is used when sending request.
 </head>
 <body>
 
-
-    <form action="">
-        <label for="ip-input">Please enter your IP address!</label>
-        <br>
-        <input type="text" id="ip-input" placeholder="Your IP address here...">
-
+    <div class="main-container">
+        <form action="">
+            <label for="ip-input">Please enter your IP address!</label>
+            <br>
+            <input type="text" id="ip-input" placeholder="Your IP address here...">
         
-        <button type="submit" id="submit-button">Submit</button>
-    </form>
-
-    <p id="ip-text"></p>
+            <label for="submit"></label>
+            <input type="button" value="Submit" id="submit">
+        </form>
+            
+        <p id="ip-text"></p>
+    
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

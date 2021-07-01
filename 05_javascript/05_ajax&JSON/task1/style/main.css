@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.main-container {
+    height: 40vh;
+    text-align: center;
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/12/84/zD6kXW.png);
+    background-size: cover;
+    padding-top: 150px;
+}
+
+label {
+    color: rgb(215,209,214);
+}
+
+#ip-input {
+    margin-top: 25px;
+    padding: 5px;
+    display: inline-block;
+    background-color:rgba(216, 222, 231, 0.863);
+    border: 1px solid rgb(51,75,83);
+}
+
+#submit {
+    display: block;
+    margin: 25px auto;
+    padding: 7px 10px;
+    border: 1px solid rgb(51,75,83);
+    border-radius: 10px;
+    color: rgb(64, 103, 172);
+    font-weight: 700;
+    background-color:rgb(179, 181, 185);
+}
+
+#submit:hover {
+    color: rgb(97, 137, 207);
+    background-color:rgb(109, 110, 112);
+    cursor: pointer;
+}
+
+#ip-text {
+    color: rgb(215,209,214);
+}
