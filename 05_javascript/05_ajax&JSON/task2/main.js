@@ -1,7 +1,7 @@
 var $button = document.querySelector("#submit");
 var $img = document.querySelector(".img-paragraph")
 var $dog = document.querySelector(".dog")
-var quotes = ["Pet me, human!", "Did you say walk?!", "Feed me, human!", "Ciao, ciao!", "Wuff!", "Did you say bacon!?", "I'm a party animal!"]
+var quotes = ["Pet me, human!", "Did you say walk?!", "Feed me, human!", "Ciao, ciao!", "Wuff!", "Did you say bacon!?", "I'm a party animal!"];
 
 
 var handler = function () {
@@ -17,6 +17,9 @@ var handler = function () {
 
     request.send();
     $dog.textContent = quotes[Math.floor(Math.random()*quotes.length)]
+    $img.style.width = "720px";
+    $img.style.height = "405px";
+
 
 }
 
