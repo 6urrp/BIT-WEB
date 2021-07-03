@@ -1,0 +1,43 @@
+<!--
+    GitHubSearcher
+Create a page that contains a logo and a search box (as shown on the mock)
+The page is initially empty (there are no listed users)
+The user can input some text in the search box
+When the user clicks enter, a request is sent using jQuery Ajax API
+The request is sent to GitHub’s endpoint for searching users
+Documentation can be found at https://developer.github.com/v3
+Try to find URL and structure of a request for searching users
+When a response is received, print an image and a username on the page for all the
+users in the response
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="https://kit.fontawesome.com/a3e3fc2845.js" crossorigin="anonymous"></script>
+    <title>GitHubSearcher</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="clearfix header">
+        <h1>GitHubSearcher</h1>
+        <div class="search-box">
+            <form action="">
+                <label for="search"></label>
+                <input type="search" placeholder="Search for user" id="search">
+            </form>
+        </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

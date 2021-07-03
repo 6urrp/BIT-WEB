@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h1 {
+    padding-top: 70px;
+    font-size: 40px;
+    display: inline-block;
+}
+.search-box {
+    float: right;
+    padding-top: 70px;
+}
+
+#search {
+    padding: 10px 40px 10px 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.git-container {
+    margin-top: 150px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 30%;
+    background-color: rgb(36,41,46);
+    border-radius: 20px;
+}
+
+.avatar {
+    height: 370px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 75px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: white
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
