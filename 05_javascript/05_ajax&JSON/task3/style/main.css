@@ -5,21 +5,38 @@
 }
 
 .main-container {
-    width: 80%;
+    width: 100vw;
     margin: 0 auto;
+    
+}
+
+header {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 h1 {
-    padding-top: 70px;
     font-size: 40px;
-    display: inline-block;
-}
-.search-box {
-    float: right;
-    padding-top: 70px;
+    padding-top: 30px;
+    padding-left: 20px;
 }
 
+.search-box {
+    padding-top: 30px;
+}
+
+.logo {
+    width: 100px;
+}
 #search {
     padding: 10px 40px 10px 15px;
     border: 1px solid black;
@@ -28,32 +45,31 @@ h1 {
 }
 
 .git-container {
-    margin-top: 150px;
-    margin-right: 10px;
-    display: inline-block;
+    width: 80%;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.user-cont {
     width: 30%;
-    background-color: rgb(36,41,46);
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(218, 216, 214, 0.493);
+
 }
 
 .avatar {
-    height: 370px;
     border-radius: 50%;
-    display: block;
-    margin: 10px auto;
+    width: 95%;
 }
 
 h4 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 75px;
-    padding-left: 10px;
-    font-size: 25px;
-    color: white
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+    font-size: 1.5em;
+    color: rgb(66, 65, 65);
+    margin: 50px 0 30px 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgba(153, 145, 145, 0.493);
 }
