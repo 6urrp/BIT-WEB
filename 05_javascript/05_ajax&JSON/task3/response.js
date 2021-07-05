@@ -1,6 +1,10 @@
 var $storage = localStorage.getItem("id");
-var $user = $("<h1>").text($storage)
+var $user = $("<h1>").text($storage);
+var $main = $("<div>").addClass("main-container");
+$("body").prepend($main);
 $("body").prepend($user);
+
+
 
 var xhr = new XMLHttpRequest();
 
@@ -9,13 +13,12 @@ xhr.open("GET", `https://api.github.com/users/${$storage}/repos`, true);
 xhr.onload = function () {
     if (xhr.status >= 200 && xhr.status < 300) {
         var response = JSON.parse(xhr.responseText);
-        console.log(response)
         response.forEach(function(el) {
             el.description = el.description || "No description";
-            $("body").append(
-            `<div class="main-container">
+            $($main).append(
+            `<div class="repo-container">
             <img src="repo.png" class="repo">
-            <ul>
+            <ul class="items">
             <li>Repository name: ${el.name}</li>
             <li>Repo description: ${el.description}</li>
             <li>Repo stars: ${el.stargazers_count}</li>
@@ -27,4 +30,4 @@ xhr.onload = function () {
 
 };
 
-xhr.send()
+xhr.send();

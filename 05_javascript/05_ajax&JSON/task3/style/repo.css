@@ -1,4 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-0NBRSChI1YxiI_hmIWo4M-kMDMaf24z47Ad0R_E58FwMJDR3r4HFAzhob8fVtuV7CI&usqp=CAU);
+}
+
+h1 {
+    width: fit-content;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 4em;
+    background-color: rgb(229, 231, 233);
+    border: 1px solid rgb(194, 193, 193);
+    box-shadow: 1px 1px 15px 3px #9c9b9b;
+}
+.main-container { 
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.repo-container {
+    border: 1px solid rgb(194, 193, 193);
+    box-shadow: 1px 1px 15px 3px #9c9b9b;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(241,248,255);
+    width: 45%;
+}
+
+.items {
+    list-style: none
+}
+
+.items li {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 205, 205);
+    margin-bottom:7px;
+}
+
+li:nth-child(even) {
+    background-color: rgb(229, 231, 233);
+}
+
+li:nth-child(odd) {
+    background-color: white;
+}
+
 .repo {
     width: 100px;
     height: 100px;
 }
+
