@@ -13,14 +13,19 @@ xhr.onload = function () {
     top50.forEach(function(el){
         let mainDiv = document.createElement("div");
         mainDiv.setAttribute("data-key", el.id);
+        mainDiv.setAttribute("title-name", el.name);
+        mainDiv.setAttribute("data-image", el.image.original)
         mainDiv.classList = "tv-div";
+
         let img = document.createElement("img");
         img.setAttribute("src", el.image.medium);
+
         let title = document.createElement("h4");
         title.textContent = el.name;
+
         main.append(mainDiv);
-        mainDiv.append(img)
-        mainDiv.append(title)
+        mainDiv.append(img);
+        mainDiv.append(title);
     })
 
     localStorage.clear();
@@ -29,9 +34,16 @@ xhr.onload = function () {
     div.forEach(function(el) {
         el.addEventListener("click", function(event) {
             event.preventDefault();
-            let key = document.querySelector(".tv-div").getAttribute("data-key");
+            let key = this.getAttribute("data-key");
             window.localStorage.setItem("id", key);
-            document.location = "tv-show.html"
+
+            let title = this.getAttribute("title-name");
+            window.localStorage.setItem("show", title);
+
+            let image = this.getAttribute("data-image");
+            window.localStorage.setItem("tv-image", image);
+            
+            document.location = "tv-show.html";
         })
     })
 

@@ -18,7 +18,7 @@ request.onload = function () {
 
             $(picture).attr("src", element.avatar_url);
             $(picture).addClass("avatar");
-            $(userName).text(element.login).attr("");
+            $(userName).text(element.login);
             $users.push(element.login);
             
             $git.prepend($userContainer);

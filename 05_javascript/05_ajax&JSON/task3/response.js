@@ -15,7 +15,7 @@ xhr.onload = function () {
         var response = JSON.parse(xhr.responseText);
         response.forEach(function(el) {
             el.description = el.description || "No description";
-            $($main).append(
+            $($main).appendChild(
             `<div class="repo-container">
             <img src="repo.png" class="repo">
             <ul class="items">
