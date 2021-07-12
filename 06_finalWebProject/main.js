@@ -1,6 +1,7 @@
 const endpoint = "http://api.tvmaze.com/shows";
 let main = document.querySelector(".main-div");
 let top50 ={};
+let titles = [];
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", endpoint, true);
@@ -8,6 +9,9 @@ xhr.onload = function () {
     const request = JSON.parse(xhr.responseText);
     let rating = request.sort(function(a, b) {
         return b.rating.average - a.rating.average;
+    })
+    request.forEach(function (el) {
+        titles.push(el.name)
     })
     top50 = rating.slice(0, 50);
     top50.forEach(function(el){

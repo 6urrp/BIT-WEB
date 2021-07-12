@@ -51,8 +51,6 @@ request2.onload = function () {
 
 request2.send();
 
-
-
 const request3 = new XMLHttpRequest();
 request3.open("GET", `http://api.tvmaze.com/shows/${tvShowId}`, true);
 request3.onload = function(){
