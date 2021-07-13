@@ -1,11 +1,7 @@
-console.log(localStorage)
 const tvShowId = localStorage.getItem("id");
-const mainTitle = document.querySelector("h1").innerText = localStorage.getItem("show")
+const mainTitle = document.querySelector("h2");
 
 const tvImg = document.createElement("img");
-let imgsrc = localStorage.getItem("tv-image")
-tvImg.setAttribute("src", imgsrc);
-document.querySelector(".imageDiv").append(tvImg)
 
 let season = document.querySelector(".season-title");
 let seasonDate = document.querySelector(".season-date");
@@ -19,6 +15,7 @@ request.open("GET", `http://api.tvmaze.com/shows/${tvShowId}/seasons`)
 
 request.onload = function() {
     const response = JSON.parse(request.responseText);
+    console.log(response)
     const numberOfSeasons = response.length;
     season.textContent = `Seasons (${numberOfSeasons})`
 
@@ -38,7 +35,6 @@ const request2 = new XMLHttpRequest();
 request2.open("GET", `http://api.tvmaze.com/shows/${tvShowId}/cast`);
 request2.onload = function () {
     const response2 = JSON.parse(request2.responseText);
-    console.log(response2);
 
     response2.forEach(function(el) {
         let castList = document.createElement("li");
@@ -55,6 +51,9 @@ const request3 = new XMLHttpRequest();
 request3.open("GET", `http://api.tvmaze.com/shows/${tvShowId}`, true);
 request3.onload = function(){
     const response3 = JSON.parse(request3.responseText);
+    mainTitle.innerText = response3.name;
+    tvImg.setAttribute("src", response3.image.original);
+    document.querySelector(".imageDiv").append(tvImg)
     showInfo.innerHTML = response3.summary;
 }
 request3.send();

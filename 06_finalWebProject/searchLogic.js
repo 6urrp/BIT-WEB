@@ -9,10 +9,10 @@ let handler = function(e) {
     let array10 = [];
     if(userData){
         emptyArray = titles.filter(function(data){
-            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+            return data.name.toLocaleLowerCase().includes(userData.toLocaleLowerCase());
         });
         emptyArray = emptyArray.map(function(data){
-            return data = `<li>${data}</li>`;
+            return `<li data-id=${data.id}>${data.name}</li>`;
         });
         array10 = emptyArray.slice(0, 10)
 
@@ -29,9 +29,9 @@ let handler = function(e) {
 }
 
 function select(element){
-    let selectData = element.textContent;
-    inputBox.value = selectData;
-
+    let id = element.getAttribute("data-id")
+    localStorage.setItem("id", id);
+    window.location = "tv-show.html";
     searchWrapper.classList.remove("active");
 }
 

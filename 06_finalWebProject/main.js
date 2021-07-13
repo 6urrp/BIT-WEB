@@ -11,14 +11,15 @@ xhr.onload = function () {
         return b.rating.average - a.rating.average;
     })
     request.forEach(function (el) {
-        titles.push(el.name)
+        titles.push({
+            name: el.name,
+            id: el.id
+        });
     })
     top50 = rating.slice(0, 50);
     top50.forEach(function(el){
         let mainDiv = document.createElement("div");
         mainDiv.setAttribute("data-key", el.id);
-        mainDiv.setAttribute("title-name", el.name);
-        mainDiv.setAttribute("data-image", el.image.original)
         mainDiv.classList = "tv-div";
 
         let img = document.createElement("img");
@@ -40,12 +41,6 @@ xhr.onload = function () {
             event.preventDefault();
             let key = this.getAttribute("data-key");
             window.localStorage.setItem("id", key);
-
-            let title = this.getAttribute("title-name");
-            window.localStorage.setItem("show", title);
-
-            let image = this.getAttribute("data-image");
-            window.localStorage.setItem("tv-image", image);
             
             document.location = "tv-show.html";
         })
